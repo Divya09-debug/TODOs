@@ -120,14 +120,33 @@ body {
     border-radius: 10px;
   }
 
+  .aDD h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .aDD {
+    display: flex;
     flex-direction: column;
+    align-items: center; /* or stretch */
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .aDD input {
+    width: 40%;
+    max-width: 400px;
     align-items: stretch;
   }
 
-  .aDD input,
   .btn {
-    width: 100%;
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
   }
 
   .Todo {
@@ -136,13 +155,8 @@ body {
   }
 
   .buttons {
-    justify-content: flex-start;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-  }
-
-  .edit-input {
-    width: 100%;
-    margin-bottom: 10px;
   }
 }
