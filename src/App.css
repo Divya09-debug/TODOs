@@ -96,3 +96,47 @@ body {
 
 
 
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .container {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .aDD {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .aDD input,
+  .btn {
+    width: 100%;
+  }
+
+  .Todo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .buttons {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .edit-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
