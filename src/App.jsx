@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import{ IoCreateOutline, IoTrashOutline, IoSaveOutline,IoAddOutline} from "react-icons/io5";
 
 function App() {
   const [todo, setTodo] = useState("");
@@ -69,7 +70,7 @@ useEffect(() => {
             <h2>Add Todos</h2>
             <input type="text" onChange={handleChange} value={todo} />
             <button className="btn" onClick={handleAdd}>
-              Add
+              <IoAddOutline/>
             </button>
           </div>
 
@@ -86,7 +87,7 @@ useEffect(() => {
                       className="edit-input"
                     />
                     <button className="btn" onClick={() => handleEditSubmit(index)}>
-                      Save
+                      <IoSaveOutline/>
                     </button>
                   </>
                 ) : (
@@ -96,10 +97,10 @@ useEffect(() => {
                     </div>
                     <div className="buttons">
                       <button className="btn" onClick={() => handleEdit(index)}>
-                        Edit
+                        <IoCreateOutline/>
                       </button>
                       <button className="btn" onClick={() => handleDelete(index)}>
-                        Delete
+                        <IoTrashOutline/>
                       </button>
                       <button className="btn" onClick={() => handleDone(index)}>
                         {item.completed ? "Undo" : "Done"}
@@ -112,6 +113,7 @@ useEffect(() => {
           </div>
         </div>
       </div>
+      
     </>
   );
 }
