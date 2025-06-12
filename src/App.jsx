@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
 
@@ -7,6 +7,23 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [editIndex, setEditIndex] = useState(null);
   const [editValue, setEditValue] = useState("");
+
+
+
+  useEffect(() => {
+  const storedTodos = localStorage.getItem("todos");
+  if (storedTodos) {
+    setTodos(JSON.parse(storedTodos));
+  }
+}, []);
+
+
+useEffect(() => {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}, [todos]);
+
+
+
 
   const handleAdd = () => {
     if (todo.trim() === "") return;
