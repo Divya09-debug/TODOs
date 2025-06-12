@@ -1,14 +1,18 @@
 body {
-  background-color: rgb(217, 200, 247);
+  background-color:  rgb(27, 27, 27);
+  color: aliceblue;
+  @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+  font-family: "Silkscreen", sans-serif;
+
 }
 
 .nav {
-  background-color: rgb(175, 132, 233);
+  background-color: rgb(112, 112, 112);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 15px;
 }
 
@@ -30,18 +34,25 @@ body {
 }
 
 .container{
-  background-color: rgb(212, 190, 235);
+  background-color: rgb(22, 22, 22);
   height: 80vh;
-  width: 90vw;
-  border: 2px solid black;
+  width: 70vw;
+  /* border: 2px solid black; */
   margin-top: 20px;
   border-radius: 20px;
   padding: 15px;
 
 }
 
+.aDD h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .aDD input{
-  border-radius: 3px;
+  border-radius: 15px;
   height: 21px;
   min-width: 300px;
 }
@@ -49,12 +60,11 @@ body {
 .btn{
   padding: 5px;
   width: 64px;
-  background-color: rgb(199, 147, 248);
+  background-color: rgb(99, 99, 99);
   border-radius: 5px;
   margin: 6px;
   padding: 5px 10px;
   border: none;
-  background-color: #6875ec;
   color: white;
   border-radius: 3px;
   cursor: pointer;
@@ -62,7 +72,7 @@ body {
 
 .btn:hover{
   transition: 0.5s;
-  background-color: rgb(158, 100, 221);
+  background-color: rgb(39, 39, 39);
 }
 
 .Todo {
@@ -71,7 +81,7 @@ body {
   align-items: center;
   margin: 10px 0;
   padding: 8px;
-  background-color: rgb(193, 152, 236);
+  background-color: rgb(32, 32, 32);
   border-radius: 5px;
 }
 
@@ -82,10 +92,6 @@ body {
 .buttons {
   display: flex;
   gap: 8px;
-}
-
-.btn:hover {
-  background-color: #4a53cc;
 }
 
 .edit-input {
